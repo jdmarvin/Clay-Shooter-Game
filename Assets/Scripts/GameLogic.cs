@@ -8,7 +8,7 @@ public class GameLogic : MonoBehaviour {
 	public Transform shootTable;
 
 	void Update () {
-		if (Input.anyKeyDown) {
+		if (Input.GetKeyDown("space")) {
 			Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
 		}
 	}

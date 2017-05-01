@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\DestroyByTime.cs" />
      <Compile Include="Assets\Scripts\GameLogic.cs" />
+     <Compile Include="Assets\Scripts\LaunchClayPigeon.cs" />
      <Compile Include="Assets\Scripts\ShootClayPigeon.cs" />
  <Reference Include="Facebook.Unity.Settings">
  <HintPath>/Users/jmarvin/Documents/Employee Docs/Auto VR Final/Clay Shooter/Library/FacebookSDK/Facebook.Unity.Settings.dll</HintPath>
