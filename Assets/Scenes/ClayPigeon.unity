@@ -202,6 +202,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clayPigeon: {fileID: 1076539878910684, guid: 3480e5fa0385c41d6a2dbe684a01c363, type: 2}
   shootTable: {fileID: 1762120614}
+  waveStart: 1
+  waveDelay: 2
+  clayWave: 0
 --- !u!4 &730585687
 Transform:
   m_ObjectHideFlags: 0
