@@ -148,4 +148,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd1bb9367e3ed4e64970a7c79c3d1efa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  force: 5
+  clayPigeonExplosion: {fileID: 1407221872529434, guid: e374ea273217d4998be1189e95d8bb80,
+    type: 2}
