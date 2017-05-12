@@ -17,6 +17,16 @@ public class GameLogic : MonoBehaviour {
 		if (Input.GetKeyDown("space")) {
 			Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
 		}
+
+		if (Input.GetKeyDown("return")) {
+			clayWave = true;
+			StartClayWave ();
+		}
+
+		if (Input.GetKeyDown("delete")) {
+			clayWave = false;
+			Debug.Log ("Stop the wave!");
+		}
 	}
 
 	void StartClayWave () {
@@ -30,7 +40,7 @@ public class GameLogic : MonoBehaviour {
 	IEnumerator ClayWaves () {
 
 		yield return new WaitForSeconds (waveStart);
-		while (true) {
+		while (clayWave) {
 
 			Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
 			yield return new WaitForSeconds (waveDelay);
