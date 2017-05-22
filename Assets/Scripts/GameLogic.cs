@@ -19,11 +19,7 @@ public class GameLogic : MonoBehaviour {
 		
 	void Update () {
 		if (Input.GetKeyDown("space")) {
-			randomShotAngle ();
-			shootTable.transform.eulerAngles = new Vector3 (launchTableAngle,
-				randomAngle,
-				shootTable.transform.rotation.z);
-			Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
+			launchShot ();
 		}
 
 		if (Input.GetKeyDown("return")) {
@@ -50,7 +46,7 @@ public class GameLogic : MonoBehaviour {
 		yield return new WaitForSeconds (waveStart);
 		while (clayWave) {
 
-			Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
+			launchShot ();
 			yield return new WaitForSeconds (waveDelay);
 		}
 
@@ -58,5 +54,13 @@ public class GameLogic : MonoBehaviour {
 
 	void randomShotAngle () {
 		randomAngle = Random.Range (45.0f, -45.0f);
+	}
+
+	void launchShot () {
+		randomShotAngle ();
+		shootTable.transform.eulerAngles = new Vector3 (launchTableAngle,
+			randomAngle,
+			shootTable.transform.rotation.z);
+		Instantiate (clayPigeon, shootTable.position, shootTable.rotation);
 	}
 }
