@@ -205,6 +205,7 @@ MonoBehaviour:
   waveStart: 1
   waveDelay: 2
   clayWave: 0
+  launchTableAngle: -45
 --- !u!4 &730585687
 Transform:
   m_ObjectHideFlags: 0

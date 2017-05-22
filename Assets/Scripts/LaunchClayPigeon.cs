@@ -21,6 +21,5 @@ public class LaunchClayPigeon : MonoBehaviour {
 		clayPigeonRigidbody.useGravity = true;
 		
 	}
-
-
+		
 }
